@@ -1,37 +1,101 @@
 .header{
-   position:relative;
+  position:relative;
+}
+.theme--pink{
+  background-color:#D17D7D;
+}
+.latest-recipe{
+  margin-top: 0;
+  margin-bottom:5px;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1rem;
+  padding-top: 40px;
+  color: white;
+}
+.latest-recipe-info{
+  font-size: 0.59rem;
+  color: white;
+  font-family: Poppins;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.brand-name{
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+
+html {
+  font-size: 17px;
+  line-height: 16px;
+}
+
+@media (min-width: 800px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+
+h1 {
+  margin: 0;
+  color: white;
+  font-weight: 700;
+  line-height: 1.5rem;
+  font-size: 1.1rem;
+  font-family: Poppins;
 }
 .text-overlay {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   padding: 1rem;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 700;
   color: white;
+  font-family: Poppins;
 }
 .header-image{
-    max-width:100%
+    max-width:100%;
+    display:block;
+    margin: 0 auto;
 }
-.image {
+/* .image {
   width: 50%;
   height: 50%;
-}
+} */
 .latest-recipe-img{
-    max-width:100%
+    max-width:100%;
+    display:block;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.latest-recipe-extra{
+  font-family: Raleway;
+  font-size: 0.76rem;
+  margin: 0 auto;
+  max-width: 60%;
+  text-align: center;
+  color: white;
 }
 .image-contain {
   object-fit: contain;
   object-position: center;
+}
+.button{
+  background-color: #C09B9B;
+  border-radius: 2px;
+  
 }
 .demoWrapper {
   padding: 10px;
   background: white;
   box-sizing: border-box;
   resize: horizontal;
-  border: 1px dashed;
   overflow: auto;
   max-width: 100%;
   
