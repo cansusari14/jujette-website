@@ -1,8 +1,13 @@
 .header{
   position:relative;
 }
+main {
+  margin: 0 auto;
+  max-width: 900px;
+}
 .theme--pink{
   background-color:#D17D7D;
+  padding: 10px;
 }
 .latest-recipe{
   margin-top: 0;
@@ -23,18 +28,34 @@
 }
 .brand-name{
   position: fixed;
+  left: 0;
   text-align: center;
   width: 100%;
 }
 
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list > * {
+  flex-basis: 100%;
+}
+
+@media (min-width: 800px) {
+  .list > * {
+    flex-basis: 50%;
+  }
+}
+
 html {
   font-size: 17px;
-  line-height: 16px;
+  line-height: 1.1;
 }
 
 @media (min-width: 800px) {
   html {
-    font-size: 18px;
+    font-size: 24px;
   }
 }
 
@@ -73,6 +94,7 @@ h1 {
     display:block;
     margin: 0 auto;
     margin-top: 15px;
+    margin-bottom: 15px;
 }
 .latest-recipe-extra{
   font-family: Raleway;
@@ -81,6 +103,7 @@ h1 {
   max-width: 60%;
   text-align: center;
   color: white;
+  margin-bottom:20px
 }
 .image-contain {
   object-fit: contain;
@@ -89,7 +112,15 @@ h1 {
 .button{
   background-color: #C09B9B;
   border-radius: 2px;
-  
+  height: 49px;
+  width: 163px;
+  margin: 0 auto;
+  display: block;
+  font-family: Poppins;
+  font-size:1rem;
+  color: white;
+  border: none;
+  margin-bottom:15px;
 }
 .demoWrapper {
   padding: 10px;
