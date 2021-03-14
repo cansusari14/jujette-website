@@ -1,0 +1,49 @@
+.header{
+   position:relative;
+}
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 300;
+  color: white;
+}
+.header-image{
+    max-width:100%
+}
+.image {
+  width: 50%;
+  height: 50%;
+}
+.latest-recipe-img{
+    max-width:100%
+}
+.image-contain {
+  object-fit: contain;
+  object-position: center;
+}
+.demoWrapper {
+  padding: 10px;
+  background: white;
+  box-sizing: border-box;
+  resize: horizontal;
+  border: 1px dashed;
+  overflow: auto;
+  max-width: 100%;
+  
+}
+.recipe-img{
+  width: 100%;
+  padding-bottom: 75%;
+  background-size: cover;
+}
+.recipe-img-4{
+  background-position: 50% 75%;
+  width: 100%;
+  padding-bottom: 75%;
+  background-size: cover;
+}
