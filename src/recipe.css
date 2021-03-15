@@ -55,3 +55,50 @@
 .grid-item-subst{
     grid-column: 2 / auto;
 }
+.steps{
+   font-family: Raleway; 
+   margin: 1rem;
+   margin-bottom: 1.5rem;
+}
+ol{
+    font-weight: 700;
+    list-style: none;
+    margin:0.75rem;
+    margin-left: 0;
+    counter-reset: my-awesome-counter;
+    padding: 0px;
+}
+ol li{
+    margin-bottom: 0.5rem;
+    counter-increment: my-awesome-counter;
+}
+ol li::before {
+  content: counter(my-awesome-counter) ". ";
+  color:#D17D7D;
+  font-weight: 700;
+}
+.steps h3{
+    font-family: Poppins;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+.notes{
+    margin: 1rem;
+}
+.notes h3{
+    font-family: Poppins;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+.notes h4{
+    color:#D17D7D;
+    font-size: 1rem;
+    font-family: Raleway;
+    font-weight: 700;
+    margin-bottom: 0rem;
+}
+.notes p{
+    font-family: Raleway;
+    font-size: 1rem;
+    font-weight: 700;
+}
