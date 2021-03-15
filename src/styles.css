@@ -112,6 +112,15 @@ button:hover{
   padding-top: 1.5rem;
   padding-bottom: 0.5rem;
 }
+a{
+  text-decoration: none;
+}
+a:hover{
+  cursor:pointer;
+}
+a:visited{
+  color: black;
+}
 .recipe-card-wrap h3{
   display: inline;
 }
