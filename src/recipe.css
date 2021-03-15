@@ -42,3 +42,16 @@
     font-weight: 700;
     margin: 0px;
 }
+.grid-container{
+    display:grid;
+    font-family: Raleway;
+    font-weight: 700;
+    grid-gap:0.5rem 1rem;
+    margin-top: 1rem;
+}
+.grid-item-amount{
+    grid-column: 1 / auto;
+}
+.grid-item-subst{
+    grid-column: 2 / auto;
+}
