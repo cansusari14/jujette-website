@@ -1,9 +1,16 @@
-.recipe-header{
+.black{
+    color: black;
     background-color: white;
 }
+
 .recipe-intro-wrapper{
   background-color:#D17D7D;
   padding: 1rem;
+  display: flex;
+}
+
+.recipe-intro-wrapper > * {
+  flex-basis: 50%;
 }
 .recipe-titlecard-info{
     font-family: Raleway;
