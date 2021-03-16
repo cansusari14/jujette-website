@@ -3,31 +3,36 @@
     background-color: white;
 }
 
-.recipe-intro-wrapper{
+.recipe-intro-wrapper {
   background-color:#D17D7D;
-  padding: 1rem;
   display: flex;
+  flex-direction: column;
 }
 
 .recipe-intro-wrapper > * {
   flex-basis: 50%;
 }
-.recipe-titlecard-info{
+
+@media (min-width: 624px) {
+  .recipe-intro-wrapper {
+    flex-direction: row;
+  }
+}
+
+.latest-recipe-info {
+    padding: 1.5rem;
+}
+.recipe-titlecard-info {
     font-family: Raleway;
-    margin:1rem;
-    margin-top: 2rem;
     color: white;
     text-align: center;
 }
-.recipe-summary{
+.recipe-summary {
   font-size: 1rem;
   font-weight: 500;
-  margin: 0 auto;
-  max-width: 90%;
 }
-.time{
+.time {
  font-size:0.59rem;
- margin-top: 5px;
 }
 .title-recipe-pic{
     max-width:100%;
