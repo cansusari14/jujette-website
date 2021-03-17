@@ -1,35 +1,34 @@
-.black{
+html {
+  font-size: 14px;
+  line-height: 1.1;
+}
+/* .black{
     color: black;
     background-color: white;
-}
-
+} */
 .recipe-intro-wrapper {
   background-color:#D17D7D;
   display: flex;
   flex-direction: column;
 }
-
 .recipe-intro-wrapper > * {
   flex-basis: 50%;
 }
-
 @media (min-width: 624px) {
   .recipe-intro-wrapper {
     flex-direction: row;
   }
 }
-
-
 .latest-recipe-info {
     padding: 1.5rem;
 }
 .recipe-titlecard-info {
-    font-family: Raleway;
     color: white;
+    font-family: Raleway;
     text-align: center;
 }
 .recipe-summary {
-  font-size: 1rem;
+  font-size: clamp(1rem, 3vw, 1.8rem);
   font-weight: 500;
 }
 .time {
@@ -43,38 +42,63 @@
     margin-bottom: 15px;
 }
 .ingredients-wrapper{
-    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 2vw;   
 }
 .ingredients-main h3{
+    font-size: clamp(1rem, 3vw, 2rem);
     font-family: Poppins;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
+/* make all the h3s on the page same so it would be easier, aka steps h3 */
 .ingredients-main p{
     font-family: Raleway;
+    font-size: clamp(1rem, 3vw, 2rem);
     font-weight: 700;
     margin: 0px;
 }
-.grid-container{
-    display:grid;
+ @media (min-width: 800px) {
+  .ingredients-wrapper > * {
+    flex-basis: 50%;
+  }
+}
+  @media (min-width: 800px) {
+  .ingredients-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 8vw;
+
+  }
+}
+.ingredients{
     font-family: Raleway;
-    font-weight: 700;
-    grid-gap:0.5rem 1rem;
-    margin-top: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    list-style-type: none;
+    margin: 0 !important;
+    padding: 0 !important;
 }
-.grid-item-amount{
-    grid-column: 1 / auto;
-}
-.grid-item-subst{
-    grid-column: 2 / auto;
+.ingredients-list{
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
 }
 .steps{
    font-family: Raleway; 
-   margin: 1rem;
-   margin-bottom: 1.5rem;
+   margin-bottom: 3vh;
+   max-width: 50%;
+}
+.steps h3{
+    font-size:clamp(1rem, 3vw, 2rem);
+    font-family: Poppins;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 ol{
-    font-weight: 700;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    font-weight: 500;
     list-style: none;
     margin:0.75rem;
     margin-left: 0;
@@ -90,12 +114,8 @@ ol li::before {
   color:#D17D7D;
   font-weight: 700;
 }
-.steps h3{
-    font-family: Poppins;
-    margin-top: 2rem;
-    margin-bottom: 0.5rem;
-}
-.notes{
+
+/* .notes{
     margin: 1rem;
 }
 .notes h3{
@@ -114,24 +134,4 @@ ol li::before {
     font-family: Raleway;
     font-size: 1rem;
     font-weight: 700;
-}
-html {
-  font-size: 14px;
-  line-height: 1.1;
-}
-
-@media (min-width: 800px) {
-  html {
-    font-size: 24px;
-  }
-}
-@media (min-width: 280px) {
-  html {
-    font-size: calc(14px + 10 * ((100vw - 320px) / 1640));
-  }
-}
-@media (min-width: 1920px) {
-  html {
-    font-size: 48px;
-  }
-} 
+} */
