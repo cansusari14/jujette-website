@@ -2,6 +2,11 @@ html {
   font-size: 14px;
   line-height: 1.1;
 }
+.font_1{
+  color: white;
+  font-family: Poppins;
+  text-align: center;
+}
 /* main {
   margin: 0 auto;
   max-width: 900px;
@@ -34,19 +39,19 @@ h1 {
 }
 
 .text-overlay {
-  color: white;
-  font-family: Poppins;
+  /* color: white;
+  font-family: Poppins; */
   font-size: clamp(1.5rem,2.5vw,3.4rem);
   left: 50%;
   padding: 1rem;
   position: absolute;
-  text-align: center;
+  /* text-align: center; */
   top: 45%;
   transform: translate(-50%, -50%);
 }
 
 .latest-recipe-wrapper{
-  background-color:#D17D7D;
+  background-color: #D17D7D;
 }
 
 @media (min-width: 800px) {
@@ -58,7 +63,7 @@ h1 {
     flex-direction: row;
     flex-wrap: wrap;
     margin: 6vw;
-    margin-bottom: 2vw;
+    margin-bottom: 4vw;
   }
 }
 .text-wrapper{
@@ -68,32 +73,33 @@ h1 {
   justify-content: center;
 }
 .latest{
-  color: white;
-  font-family:Poppins;
-  font-size: clamp(1rem, 2vw, 1.8rem);
-  font-weight:400;
-  text-align: center;
+  /* color: white;
+  font-family:Poppins; */
+  font-size: clamp(1rem, 3vw, 3rem);
+  font-weight:700;
+  text-decoration: underline;
+  /* text-align: center; */
 }
 .title{
-  color: white;
-  font-family: Poppins;
-  font-size: clamp(1rem, 4vw, 2.5rem);
+  /* color: white;
+  font-family: Poppins; */
+  font-size: clamp(1rem, 4vw, 4rem);
   font-weight: 600;
   margin-bottom:5px;
   margin-top: 0;
   padding-top: 1.5rem;
-  text-align: center;
+  /* text-align: center; */
 }
 .latest-recipe-info p{
-  color: white;
-  font-family: Poppins;
+  /* color: white;
+  font-family: Poppins; */
   font-size: clamp(0.9rem, 1.5vw, 1rem);
   margin-bottom: 1rem;
   margin-top: 0px;
-  text-align: center;
+  /* text-align: center; */
 }
 .latest-recipe-extra{
-  color: white;
+  color:white;
   font-family: Raleway;
   font-size: clamp(1rem, 2vw, 1.5rem);
   font-weight: 600;
@@ -103,25 +109,21 @@ h1 {
   text-align: center;
 }
 .button-recipe{
-  background: black;
-  color: #fff;
+  background: #D17D7D;
+  border: none;
+  color: white;
   font-family: Poppins;
-  font-size: clamp(1rem,1vw,1.5rem);
+  font-size: clamp(1rem,2vw,1.5rem);
   font-weight: 500;
   padding: .6rem 2.5rem;
   margin-bottom: 20px;
 }
-/* @media (max-width:30em){
- button{
-  display:block;
-  margin:0.4em auto;
-}
-} */
 .title-list{
-  font-family: Poppins;
+  /* font-family: Poppins; */
   font-size: clamp(1rem, 2.5vw, 3rem);
   margin: 0.5rem;
-  text-align: center;
+  /* text-align: center; */
+  color: black;
 }
 .recipe-card-wrap {
   background: white;
@@ -177,10 +179,10 @@ a:visited{
   width: 50%;
   height: 50%;
 } */
-.image-contain {
+/* .image-contain {
   object-fit: contain;
   object-position: center;
-}
+} */
 .recipe-img {
   width: 100%;
   padding-bottom: 75%;
@@ -206,11 +208,27 @@ a:visited{
     font-size: 48px;
   }
 } */
+@media (min-width: 800px) {
+  .about-me-wrapper > * {
+    flex-basis: 50%;
+  }
+}
 .about-me-wrapper{
-   display: flex;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 6vw;
+    margin: 10vw;
     margin-bottom: 2vw;
+    background-color:#D17D7D;
 
+}
+.about-me-text{
+  color: white;
+  font-family: Raleway;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: 500;
+  margin: 0 auto;
+  margin-bottom:20px;
+  max-width: 92%;
+  text-align: center;
 }

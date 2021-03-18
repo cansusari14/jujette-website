@@ -27,9 +27,9 @@ html {
     font-family: Raleway;
     text-align: center;
 }
-.recipe-summary {
-  font-size: clamp(1rem, 3vw, 1.8rem);
-  font-weight: 500;
+.recipe-summary  {
+  font-size: clamp(1rem, 2vw, 1.5rem) !important;
+  font-weight: 600;
 }
 .time {
  font-size:0.59rem;
@@ -60,12 +60,12 @@ html {
     font-weight: 700;
     margin: 0px;
 }
- @media (min-width: 800px) {
+ @media (min-width: 600px) {
   .ingredients-wrapper > * {
     flex-basis: 50%;
   }
 }
-  @media (min-width: 800px) {
+  @media (min-width: 624px) {
   .ingredients-wrapper {
     display: flex;
     flex-direction: row;
@@ -135,3 +135,25 @@ ol li::before {
     font-size: 1rem;
     font-weight: 700;
 } */
+.notes-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+.notes-wrapper > * {
+  flex-basis: 50%;
+}
+@media (min-width: 624px) {
+  .notes-wrapper  {
+    flex-direction: row;
+  }
+}
+video {
+  /* override other styles to make responsive */
+  width: 100%    !important;
+  height: auto   !important;
+}
+@media (min-width: 800px) {
+  .video-container {
+    margin: 12vw;
+  }
+}
