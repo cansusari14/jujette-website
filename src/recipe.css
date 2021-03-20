@@ -42,10 +42,17 @@ html {
   margin-bottom: 15px;
 }
 .ingredients-wrapper {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 2vw;
+  margin: 8vw;
+}
+@media (min-width: 624px) {
+  .ingredients-wrapper > * {
+    flex-basis: 50%;
+  }
+  .ingredients-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 8vw;
+  }
 }
 .ingredients-main h3 {
   font-size: clamp(1rem, 3vw, 2rem);
@@ -60,26 +67,13 @@ html {
   font-weight: 700;
   margin: 0px;
 }
-@media (min-width: 600px) {
-  .ingredients-wrapper > * {
-    flex-basis: 50%;
-  }
-}
-@media (min-width: 624px) {
-  .ingredients-wrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 8vw;
-  }
-}
 .ingredients {
   font-family: Raleway;
   font-weight: 600;
   line-height: 1.5;
   list-style-type: none;
-  margin: 0 !important;
-  padding: 0 !important;
+  margin: 0;
+  padding: 0;
 }
 .ingredients li {
   margin-bottom: 0.5rem;
@@ -90,7 +84,6 @@ html {
 .steps {
   font-family: Raleway;
   margin-bottom: 3vh;
-  max-width: 50%;
 }
 .steps h3 {
   font-size: clamp(1rem, 3vw, 2rem);
