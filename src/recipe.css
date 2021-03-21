@@ -2,10 +2,6 @@ html {
   font-size: 14px;
   line-height: 1.1;
 }
-/* .black{
-    color: black;
-    background-color: white;
-} */
 .recipe-intro-wrapper {
   background-color: #d17d7d;
   display: flex;
@@ -55,12 +51,11 @@ html {
   }
 }
 .ingredients-main h3 {
-  font-size: clamp(1rem, 3vw, 2rem);
+  font-size: clamp(1.5rem, 3vw, 2rem);
   font-family: Poppins;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   margin-bottom: 0.5rem;
 }
-/* make all the h3s on the page same so it would be easier, aka steps h3 */
 .ingredients-main p {
   font-family: Raleway;
   font-size: clamp(1rem, 3vw, 2rem);
@@ -86,9 +81,9 @@ html {
   margin-bottom: 3vh;
 }
 .steps h3 {
-  font-size: clamp(1rem, 3vw, 2rem);
+  font-size: clamp(1.5rem, 3vw, 2rem);
   font-family: Poppins;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   margin-bottom: 0.5rem;
 }
 ol {
@@ -110,43 +105,9 @@ ol li::before {
   color: #d17d7d;
   font-weight: 700;
 }
-
-/* .notes{
-    margin: 1rem;
-}
-.notes h3{
-    font-family: Poppins;
-    margin-top: 2rem;
-    margin-bottom: 0.5rem;
-}
-.notes h4{
-    color:#D17D7D;
-    font-size: 1rem;
-    font-family: Raleway;
-    font-weight: 700;
-    margin-bottom: 0rem;
-}
-.notes p{
-    font-family: Raleway;
-    font-size: 1rem;
-    font-weight: 700;
-} */
-/* .notes-wrapper {
-  display: flex;
-  flex-direction: column;
-}
-.notes-wrapper > * {
-  flex-basis: 50%;
-}
-@media (min-width: 624px) {
-  .notes-wrapper {
-    flex-direction: row;
-  }
-} */
 video {
-  /* override other styles to make responsive */
-  width: 100% !important;
-  height: auto !important;
+  width: 100%;
+  height: auto;
 }
 @media (min-width: 800px) {
   .video-container {

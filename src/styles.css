@@ -15,7 +15,7 @@ html {
   padding: 1% 0;
   position: sticky;
   text-align: center;
-  top:0;
+  top: 0;
   width: 100%;
   z-index: 1;
 }
@@ -34,22 +34,15 @@ h1 {
   width: 100%;
   height: 100vh;
   /* the added property makes the landing image cover the full view height and width */
-  /* min-height: 62vh;
-    width: 100%; */
 }
-
 .text-overlay {
-  /* color: white;
-  font-family: Poppins; */
   font-size: clamp(1.5rem, 2.5vw, 3.4rem);
   left: 50%;
   padding: 1rem;
   position: absolute;
-  /* text-align: center; */
   top: 45%;
   transform: translate(-50%, -50%);
 }
-
 .latest-recipe-wrapper {
   background-color: #d17d7d;
 }
@@ -83,18 +76,14 @@ h1 {
   font-size: clamp(1.5rem, 4vw, 4rem);
   font-weight: 600;
   letter-spacing: 1.3px;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
   margin-top: 0;
   padding-top: 1rem;
-  /* text-align: center; */
 }
 .title:hover {
   text-decoration: underline;
-  transition: all 0.8s ease-in;
 }
 .latest-recipe-info p {
-  /* color: white;
-  font-family: Poppins; */
   font-size: clamp(0.9rem, 1.5vw, 1rem);
   margin-bottom: 1rem;
   margin-top: 0px;
@@ -109,22 +98,10 @@ h1 {
   max-width: 92%;
   text-align: center;
 }
-
-.button-recipe {
-  background: #d17d7d;
-  border: none;
-  color: white;
-  font-family: Poppins;
-  font-size: clamp(1rem, 2vw, 1.5rem);
-  font-weight: 500;
-  padding: 0.6rem 2.5rem;
-  margin-bottom: 20px;
-}
 .title-list {
-  /* font-family: Poppins; */
   color: black;
-  letter-spacing: 1.5px;
   font-size: clamp(1.5rem, 2.5vw, 3.4rem);
+  letter-spacing: 1.5px;
   margin: 0.5rem;
   margin-top: 1.5rem;
 }
@@ -132,9 +109,6 @@ h1 {
   background: white;
   box-sizing: border-box;
   font-family: Poppins;
-  /* max-width: 100%;
-  overflow: auto;
-  resize: horizontal; */
   padding: 1rem;
   padding-top: 1rem;
   padding-bottom: 0.5rem;
@@ -176,21 +150,12 @@ a:visited {
 .list > * {
   flex-basis: 100%;
 }
-
 @media (min-width: 800px) {
   .list > * {
     flex-basis: calc(100% / 3);
   }
   /* having 3 cards displayed on recipe section */
 }
-/* .image {
-  width: 50%;
-  height: 50%;
-} */
-/* .image-contain {
-  object-fit: contain;
-  object-position: center;
-} */
 .recipe-img {
   width: 100%;
   padding-bottom: 75%;
@@ -205,27 +170,17 @@ a:visited {
   padding-bottom: 75%;
   background-size: cover;
 }
-
-/* @media (min-width: 800px) {
-  html {
-    font-size: 24px;
-  }
-}
-@media (min-width: 1920px) {
-  html {
-    font-size: 48px;
-  }
-} */
 @media (min-width: 800px) {
   .about-me-wrapper > * {
     flex-basis: 50%;
   }
+  .about-me-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
 }
 .about-me-wrapper {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 10vw;
+  margin: 14vw;
   margin-bottom: 2vw;
   background-color: #d17d7d;
 }
